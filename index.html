@@ -30,5 +30,33 @@
     </nav>
   </div>
 
+      <div class="container pt-4">
+    <div class="table-responsive"> <!-- ensures table resizes properly as window does-->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="text-center">Movie Name <button id="sortMovieName" class="btn btn-link btn-sm" type="button">Sort</button></th>
+            <th class="text-center">Genre <button id="sortGenre" class="btn btn-link btn-sm" type="button">Sort</button></th>
+            <th class="text-center">Remove Movie</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <input type="text" id="movieNameInput" placeholder="Movie Name">
+      </div>
+      <div class="col-md-4">
+        <input type="text" id="genreInput" placeholder="Genre">
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-md btn-primary" id="addBtn" type="button">Add Movie</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
