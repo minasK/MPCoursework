@@ -1,0 +1,41 @@
+  .footer {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 10%;
+    background-color: white;
+    color: rgb(243, 202, 202);
+    text-align: right;
+    border-left: dotted blue;
+    border-bottom: dotted blue;
+    border-top: dotted blue;
+    border-right: dotted blue;
+    padding-right: 20px;
+  }
+  #movieNameInput, #genreInput {
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  #movieNameInput{
+    margin-left: 68px;
+  }
+  #genreInput{
+    margin-left: 85px;
+  }
+  
+  thead, tbody {
+    background-color: azure;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  #sortMovieName, #sortGenre{
+    color: red;
+  }
+  #addBtn{
+    margin-left: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
