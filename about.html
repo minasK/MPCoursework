@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title> About </title>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Movie Table">
+<meta name="keywords" content="Movies, sorting, genre, html, jquery">
+<meta name="author" content="P. Skavantzos M. Kasmas">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="gridcards.css">
+<link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="index.css">
+
+
+
 </head>
 <body>
-<a href="index.html">index</a>
+ <div class="header">
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <h1 class="title">ITC4214 Coursework MP</h1>
+    <nav class="menu">
+      <a href="#" id="home">Home</a> <!--home button exists bottom and right, just above the end of the page-->
+      <a href="About.html" class="About">About</a>
+      <a href="Index.html" class="Index">Index</a>
+    </nav>
+  </div>
+
+
+<div id="slider">
+    <figure>
+		<img src="css.jpg">
+        <img src="html.jpg">
+        <img src="Javascript.jpg">
+        <img src="jquery.jpg">
+        <img src="github.png">  <!--so that it can change back to the first one-->
+    </figure>
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+	  <h2> Minas Kasmas </h2>
+    <img src="mavatar.jpg">
+      <p>Minas is a senior student at Deree College, majoring in Cybersecurity & Networks. He is 25 years old and some of his hobbies include working out, going to the movies, and grinding web development.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2> Panagiotis Skavantzos </h2>
+      <img src="pavatar.jpg">
+      <p>Panagiotis is a senior student at Deree College, also majoring in Cybersecurity & Networks. He is 29 years old, with 10 courses remaining before graduation. </p>
+    </div>
+  </div>
+
+    <div class="footer fixed-bottom bg-light text-right"> <!-- fixed is for the footer to be at the bottom of the viewport, bg-light provides light background to the footer and text-right aligns content of the text to the right side-->
+  <p>&copy; MP All Rights Reserved
+    <img src="logo.jpg" height="75px" width="75px">
+    <br>
+    <a href="https://www.instagram.com/pkskavantzos/" target="_blank">Panagiotis' Instagram</a>
+    <br>
+    <a href="https://www.instagram.com/minaskasmas/" target="_blank">Minas' Instagram</a>
+  </p>
+</div>
+
+
+</div>
 </body>
-</html>
