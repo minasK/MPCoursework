@@ -1,0 +1,45 @@
+#slider { /*the whole carousel container called slider, which is also in body as div*/
+    overflow: hidden;/*that's to prevent horizontal scrolling and the extra whitespace between pics*/
+    }
+#slider figure {
+    position: relative; /*this changes the position of the element relative to the parent element and relative to itself*/
+    width: 150%;
+    margin: 10;
+    left: 0;
+    animation: 10s slider infinite; /*the time it takes to move slides to the end is 10s*/
+}
+#slider figure img {
+    float: left;
+    width: 18%;
+}
+
+@keyframes slider { /* keyframes or waypoints of the animation sequence*/
+    0% {
+        left: 10%;
+    }
+    20% {
+        left: 10%;
+    }
+    25% {
+        left: -10%;
+    }
+    45% {
+        left: -10%;
+    }
+    50% {
+        left: -20%;
+    }
+    70% {
+        left: -20%;
+    }
+    75% {
+        left: -30%;
+    }
+    95% {
+        left: -30%;
+    }
+    100% {
+        left: -40%;
+    }
+
+}
