@@ -1,4 +1,4 @@
-  .footer {
+  .footer { /* css code that affects the footer element of index.html document; the code enclosed in curly brackets adjusts the position of the footer, along with its color, the borders of the element's box, and more*/
     position: fixed;
     right: 5px;
     bottom: 5px;
@@ -12,20 +12,20 @@
     border-right: dotted blue;
     padding-right: 20px;
   }
-  #movieNameInput, #genreInput {
+  #movieNameInput, #genreInput { /*css code that targets the elements with the identifier "movieNameInput" and "genreInput"; affects their appearance (font), their size, and the background color of the element's box*/
     text-align: center;
     background-color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
-  #movieNameInput{
+  #movieNameInput{ /*properly space element in relation to the page's borders to get a neat-looking final result*/
     margin-left: 68px;
   }
   #genreInput{
     margin-left: 85px;
   }
   
-  thead, tbody {
+  thead, tbody { /*code that affects the thead and tbody elements, adjusting their size/color etc.*/
     background-color: azure;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,7 +34,7 @@
   #sortMovieName, #sortGenre{
     color: red;
   }
-  #addBtn{
+  #addBtn{ /*properly space element in relation to borders, and also add padding to properly space the box's contents from the box's borders*/
     margin-left: 80px;
     padding-left: 50px;
     padding-right: 50px;
