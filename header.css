@@ -4,7 +4,7 @@
       padding: 0;
     }
 
-    .header {
+    .header { /*css code to lock element header's proper position (position:sticky), as well as properly space its contents from the border, and improve its appearance (text-align and background-color*/
       position: sticky;
       top: 0;
       background-color: lightblue;
@@ -12,7 +12,7 @@
       text-align: center;
       z-index: 100;
     }
-    #home {
+    #home { /*css code to position the "home" button properly at the middle of the bottom part of the page, and style its appearance with "border", "background-color*/
   position: fixed;
   bottom: 10px;
   right: 850px;
@@ -21,7 +21,7 @@
   background-color: lightblue;
 }
 
-    .header .logo {
+    .header .logo { /*adjust the width and height of the header and logo elements, display:inline-block necessary for the width and height adjustment, aligned vertically and in the middle*/
   width: 200px;
   height: auto;
   display: inline-block;
