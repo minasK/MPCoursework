@@ -5,22 +5,21 @@
     
     <title>Index</title>
 
-    
+    <!--metatags that function as identifies for search engines such as google-->  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
     <meta name="description" content="Movie Table">
     <meta name="keywords" content="Movies, sorting, genre, html, jquery">
     <meta name="author" content="P. Skavantzos M. Kasmas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
+    <!--various script sources that are necessary to achieve desired functionality of the html document-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="script1.js"></script>
     
-    
+    <!--links to all css stylesheets used to create a properly styled page-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
@@ -32,7 +31,7 @@
 <body>
     
 
-    <div class="header">
+    <div class="header">  <!--container (div) named "header" will be used to hold all information that we want to appear as the sticky header of our webpage-->
     <img class="logo" src="logo.jpg" alt="Logo">
     <h1 class="title">ITC4214 Coursework MP</h1>
     <nav class="menu">
@@ -48,20 +47,20 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th class="text-center">Movie Name <button id="sortMovieName" class="btn btn-link btn-sm" type="button">Sort</button></th>
-            <th class="text-center">Genre <button id="sortGenre" class="btn btn-link btn-sm" type="button">Sort</button></th>
+            <th class="text-center">Movie Name <button id="sortMovieName" class="btn btn-link btn-sm" type="button">Sort</button></th> <!--button styled as a link (btn-link), small size (btn-sm), used for sorting by movie name-->
+            <th class="text-center">Genre <button id="sortGenre" class="btn btn-link btn-sm" type="button">Sort</button></th> 
             <th class="text-center">Remove Movie</th>
           </tr>
         </thead>
         <tbody id="tbody">
         </tbody>
       </table>
-
-        
     </div>
+        
+    
     <div class="row">
       <div class="col-md-4">
-        <input type="text" id="movieNameInput" placeholder="Movie Name">
+        <input type="text" id="movieNameInput" placeholder="Movie Name"> <!--used to take user input to be directed to the movie name column of the table-->
       </div>
       <div class="col-md-4">
         <input type="text" id="genreInput" placeholder="Genre">
@@ -72,7 +71,7 @@
     </div>
   </div>
 
-      <div class="footer">
+      <div class="footer"> <!--container of all information relevant to the footer; logo (&copy;), images sources, and links to our social media-->
     <p>&copy; MP All Rights Reserved
       <img src="logo.jpg" height="75px" width="75px">
       <br>
