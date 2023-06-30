@@ -2,7 +2,6 @@
   $(document).ready(function () {
     // jQuery button click event to add a row
     $('#addBtn').on('click', function () {
-   $('#addBtn').on('click', function () {
     var movieList = [];
     var genreList = [];
     var movieName = $('#movieNameInput').val();
