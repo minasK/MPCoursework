@@ -15,7 +15,7 @@
     #home { /*css code to position the "home" button properly at the middle of the bottom part of the page, and style its appearance with "border", "background-color*/
   position: fixed;
   bottom: 10px;
-  right: 850px;
+  right: 12%;
   border: solid black;
   padding: 5px;
   background-color: lightblue;
