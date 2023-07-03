@@ -4,16 +4,15 @@
 <head>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="description" content="Movie Table">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--essential bootstrap code-->
+<meta charset="UTF-8"> <!-- encode it to utf8 so when the machine translates it, it will be understandable to human reading -->
+<meta name="description" content="Movie Table"> <!-- the descriptions... -->
 <meta name="keywords" content="Movies, sorting, genre, html, jquery">
 <meta name="author" content="P. Skavantzos M. Kasmas">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet" href="gridcards.css">
-<link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="gridcards.css"> <!-- here we can see the references we have to the other css files so that we can prevent many unnecessary lines -->
+<link rel="stylesheet" href="carousel.css"> <!-- moreover some of them are also going to be used in index.html and they are easy to implement in the code -->
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="index.css">
 
@@ -21,11 +20,11 @@
 
 </head>
 <body>
- <div class="header">
+ <div class="header"> <!-- the header class -->
     <img class="logo" src="logo.jpg" alt="Logo">
     <h1 class="title">ITC4214 Coursework MP</h1>
-    <nav class="menu">
-      <a href="#" id="home">Home</a> <!--home button exists bottom and right, just above the end of the page-->
+    <nav class="menu"> <!-- here we have the menu containing index, about and the home button and specified in their use in their corresponding css files. nav is for navigation menu for the links -->
+      <a href="#" id="home">Home</a> <!--home button exists bottom and somehow right, just above the end of the page, home button also refreshed the page-->
       <a href="About.html" class="About">About</a>
       <a href="Index.html" class="Index">Index</a>
     </nav>
@@ -42,9 +41,9 @@
     </figure>
 </div>
 
+<!-- no carousel div since it is only images. their modification is in css -->
 
-
-<div class="row">
+<div class="row"> <!-- each card and their avatar with the information -->
   <div class="column">
     <div class="card">
 	  <h2> Minas Kasmas </h2>
@@ -53,7 +52,7 @@
     </div>
   </div>
 
-  <div class="column">
+  <div class="column"> <!-- each card and their avatar with the information -->
     <div class="card">
       <h2> Panagiotis Skavantzos </h2>
       <img src="pavatar.jpg">
@@ -63,9 +62,9 @@
 
     <div class="footer fixed-bottom bg-light text-right"> <!-- fixed is for the footer to be at the bottom of the viewport, bg-light provides light background to the footer and text-right aligns content of the text to the right side-->
   <p>&copy; MP All Rights Reserved
-    <img src="logo.jpg" height="75px" width="75px">
-    <br>
-    <a href="https://www.instagram.com/pkskavantzos/" target="_blank">Panagiotis' Instagram</a>
+    <img src="logo.jpg" height="75px" width="75px"> <!-- the logo height and width -->
+    <br> <!-- make a line inside the element for the instagrams -->
+    <a href="https://www.instagram.com/pkskavantzos/" target="_blank">Panagiotis' Instagram</a> <!-- blank means open in a new browser tab or window -->
     <br>
     <a href="https://www.instagram.com/minaskasmas/" target="_blank">Minas' Instagram</a>
   </p>
