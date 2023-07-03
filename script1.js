@@ -1,7 +1,5 @@
 
   $(document).ready(function () {/*this function adds items to the table when the user clicks "add movie", and also allows for sorting of the column movie name and genre by alphabetical order. */
-  // jQuery button click event to add a row
-    // jQuery button click event to add a row
     $('#addBtn').on('click', function () {
     var movieList = [];
     var genreList = [];
