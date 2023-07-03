@@ -11,7 +11,7 @@
     genreList.push(genre); /*same for the value genre */
     
       
-  if (movieName == '' || genre == '') { *disallow blank entries when clicking "add movie" to protect the table from empty rows */
+  if (movieName == '' || genre == '') { /*disallow blank entries when clicking "add movie" to protect the table from empty rows */
     alert('Please enter a movie name and genre.');
     return; 
   }
