@@ -34,25 +34,26 @@
     });
 
     // Sort table by movie name
-    $('#sortMovieName').on('click', function () {
-      var table = $('#tbody');
-      var rows = table.find('tr').get();
+    $('#sortMovieName').on('click', function () { <!-- on click event handler. when clicked:  -->
+      var table = $('#tbody'); <!-- table = id tbody table -->
+      var rows = table.find('tr').get(); <!-- finds all the table rows (assigning them to var rows) within the table element (tr inside the thead) and retrieves them as an array using the .get method. -->
 
-      rows.sort(function (a, b) {
-        var movieNameA = $(a).find('td:nth-child(1)').text().toUpperCase();
-        var movieNameB = $(b).find('td:nth-child(1)').text().toUpperCase(); 
+      // sort the rows according to movie name
+      rows.sort(function (a, b) { <!--  this line sorts the rows (line 40) based on the comparison of the movie names. The sort function takes a comparison function that compares the movie names extracted from the table cells. -->
+        var movieNameA = $(a).find('td:nth-child(1)').text().toUpperCase(); <!-- in movieNameA we assign a movie name row. As parameter a, we use find method which returns the descendant element of the selected element (like child, grandchild etc...), (explain also nth-child) and make it as text of the html element. the upper case is used to make sure there will be a case-insensitive comparison   -->
+        var movieNameB = $(b).find('td:nth-child(1)').text().toUpperCase(); <!-- same is done for movieNameB but b is used so that we compare them and make the sorting -->
 
         if (movieNameA < movieNameB) {
-          return -1;
+          return -1; <!-- the actual sorting is happening here and -1 indicates that parameter 'a' should be placed before 'b' -->
         }
         if (movieNameA > movieNameB) {
-          return 1;
+          return 1; <!-- likewise but 'a' in this case is placed after 'b' -->
         }
-        return 0;
+        return 0; <!-- here nothing changes since they are already in the same alphanumeric order -->
       });
 
-      $.each(rows, function (index, row) {
-        table.append(row);
+      $.each(rows, function (index, row) { <!-- this iterates over the sorted rows using the 'each' function. each allows the iteration (like for loop) over objects or arrays and in this case 'rows'. the function that is executed for each row, takes index and row parameters that represents (index) the current item in the arrays and (row) current row being processed. -->
+        table.append(row); <!-- the table element in the tbody where the rows will be appended -->
       });
     });
 
@@ -61,7 +62,7 @@
       var table = $('#tbody');
       var rows = table.find('tr').get();
 
-      rows.sort(function (a, b) {
+      rows.sort(function (a, b) { <!-- same goes for genre as it did for movie name -->
         var genreA = $(a).find('td:nth-child(2)').text().toUpperCase();
         var genreB = $(b).find('td:nth-child(2)').text().toUpperCase();
 
