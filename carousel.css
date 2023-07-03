@@ -3,22 +3,22 @@
     }
 #slider figure {
     position: relative; /*this changes the position of the element relative to the parent element and relative to itself*/
-    width: 150%;
-    margin: 10;
+    width: 150%; /* we set the width of the figure elements to 150% of their parent's width */
+    margin: 8%;
     left: 0;
-    animation: 10s slider infinite; /*the time it takes to move slides to the end is 10s*/
+    animation: 10s slider infinite; /*the time it takes to move slides to the end is 10s and moves infinitely*/
 }
-#slider figure img {
-    float: left;
+#slider figure img { /* specifics for the images in slider */
+    float: left; /* Floats the images to the left, allowing them to be positioned side by side */
     width: 18%;
 }
 
-@keyframes slider { /* keyframes or waypoints of the animation sequence*/
-    0% {
-        left: 10%;
+@keyframes slider { /* keyframes or waypoints of the animation sequence. Keyframes are used for whole animation series */
+    0% { /* Represents the starting point of the animation */
+        left: 10%; /* Sets the left position of the figure elements to 10% */
     }
     20% {
-        left: 10%;
+        left: 10%; /* that has to do with how much they will be seen as they move */
     }
     25% {
         left: -10%;
