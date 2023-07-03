@@ -1,5 +1,5 @@
 
-    body {
+    body { /* we dont want anything special outside or inside the main element*/
       margin: 0;
       padding: 0;
     }
@@ -10,21 +10,21 @@
       background-color: lightblue;
       padding: 20px;
       text-align: center;
-      z-index: 100;
+      z-index: 100; /* highest overlapping of all elements (100 is bit excessive but you got the point) */
     }
-    #home { /*css code to position the "home" button properly at the middle of the bottom part of the page, and style its appearance with "border", "background-color*/
+    #home { /*css code to position the "home" button properly at the bottom part of the page and have enough space to not hide anything, and style its appearance with "border", "background-color*/
   position: fixed;
   bottom: 10px;
-  right: 12%;
+  right: 12%; /* 12% is exactly the position we wanted it in order not to hide anything */
   border: solid black;
   padding: 5px;
   background-color: lightblue;
 }
 
     .header .logo { /*adjust the width and height of the header and logo elements, display:inline-block necessary for the width and height adjustment, aligned vertically and in the middle*/
-  width: 200px;
+  width: 200px; /* for any device it will be 200 px */
   height: auto;
-  display: inline-block;
+  display: inline-block; /* we preferred inline block because that's our preference in header */
   vertical-align: middle;
 }
 
@@ -32,14 +32,14 @@
       display: inline-block;
       vertical-align: middle;
       font-weight: bold;
-      margin: 0 20px;
+      margin: 0 20px; /*  margin is 0 pixels on the top and bottom, and 20 pixels on the left and right */
     }
 
     .header .menu {
-      display: inline-block;
+      display: inline-block; /* so they can be aligned as one next to the other the way they are */
     }
 
-    .header .menu a {
+    .header .menu a { /* all the a elements of menu will have these specifications  */
       margin: 0 10px;
       text-decoration: none;
       color: #333;
