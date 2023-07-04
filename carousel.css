@@ -10,7 +10,7 @@
 }
 #slider figure img { /* specifics for the images in slider */
     float: left; /* Floats the images to the left, allowing them to be positioned side by side */
-    width: 18%;
+    width: 18%; /* width of each picture in the about page (side by side) */
 }
 
 @keyframes slider { /* keyframes or waypoints of the animation sequence. Keyframes are used for whole animation series */
